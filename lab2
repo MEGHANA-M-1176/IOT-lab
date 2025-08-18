@@ -1,0 +1,22 @@
+int Status = 0;
+
+void setup()
+{
+  pinMode(9, INPUT);
+  pinMode(2, OUTPUT);
+}
+
+void loop()
+{
+
+  Status = digitalRead(9);
+
+  if (Status == 1) {
+
+    digitalWrite(2, HIGH);
+  } else {
+
+    digitalWrite(2, LOW);
+  }
+  delay(100);
+}
